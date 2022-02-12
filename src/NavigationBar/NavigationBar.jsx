@@ -5,8 +5,6 @@ import { Menu, Button } from "antd";
 
 export default function NavigationBar({ isNavCollapsed, setIsNavCollapsed }) {
 
-
-
     function toggleNav() {
         setIsNavCollapsed(!isNavCollapsed);
     }
@@ -15,7 +13,7 @@ export default function NavigationBar({ isNavCollapsed, setIsNavCollapsed }) {
         <Menu
             className="navbar-container"
             theme="dark"
-            mode="vertical"
+            mode="inline"
             defaultSelectedKeys={"0"}
         >
             <div className="burger-container">
@@ -29,16 +27,16 @@ export default function NavigationBar({ isNavCollapsed, setIsNavCollapsed }) {
                     <div className="line3"></div>
                 </a>
             </div>
-            <Menu.Item key="1" icon={<IdcardOutlined />}>
+            <Menu.Item className="menu-items" key="1" icon={<IdcardOutlined />}>
                 About
             </Menu.Item>
-            <Menu.Item key="2" icon={ <FolderOpenOutlined /> }>
+            <Menu.Item className="menu-items" key="2" icon={ <FolderOpenOutlined /> }>
                 Projects
             </Menu.Item>
-            <Menu.Item key="3" icon={ <BranchesOutlined /> }>
+            <Menu.Item className="menu-items" key="3" icon={ <BranchesOutlined /> }>
                 Skills
             </Menu.Item>
-            <Menu.Item key="4" icon={<MailOutlined />}>
+            <Menu.Item className="menu-items" key="4" icon={<MailOutlined />}>
                 Contact
             </Menu.Item>
 

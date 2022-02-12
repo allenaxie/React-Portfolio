@@ -1,13 +1,23 @@
 .main {
   height: 100vh;
-  color: green;
+  width: 100vw;
 }
 
-.nav-container {
+/* Navbar */
+.sider {
   min-width: 150px !important;
   max-width: 150px !important;
+
 }
 .ant-layout-sider-collapsed {
   min-width: 80px !important;
   max-width: 80px !important;
+}
+
+/* About */
+.about-container {
+  background-color: rgb(33,33,33);
+  width: 100vw;
+  height: 800px;
+  color: white;
 }
