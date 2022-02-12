@@ -1,0 +1,38 @@
+.burger-container {
+    display: flex;
+    justify-content: start;
+    margin: 10px 0 0 20px;
+}
+.burger div {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all .3s ease;
+}
+
+/* Burger animation */
+.burger-active .line1{
+    animation: line1-toggle .4s ease forwards;
+}
+.burger-active .line2{
+    animation: line2-toggle .3s ease forwards;
+}
+.burger-active .line3{
+    animation: line3-toggle .4s ease forwards;
+}
+@keyframes line1-toggle {
+    100% {
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+}
+@keyframes line2-toggle {
+    100% {
+        opacity:0;
+    }
+}
+@keyframes line3-toggle {
+    100% {
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+}
