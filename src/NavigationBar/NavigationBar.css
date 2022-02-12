@@ -7,7 +7,7 @@
 .burger-container {
     display: flex;
     justify-content: start;
-    margin: 10px 0 0 20px;
+    margin: 10px 0 15px 24px;
 }
 .burger div {
     width: 20px;
