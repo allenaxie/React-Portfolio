@@ -13,7 +13,7 @@ export default function App() {
 
   
   return (
-      <Layout >
+      <Layout hasSider>
         <Sider 
         className="nav-container"
         trigger={null}
@@ -25,8 +25,6 @@ export default function App() {
         </Sider>
         <Layout>
           <Content className="main">
-            
-
           </Content>
           <Footer></Footer>
 

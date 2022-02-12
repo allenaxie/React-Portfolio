@@ -3,4 +3,11 @@
   color: green;
 }
 
-
+.nav-container {
+  min-width: 150px !important;
+  max-width: 150px !important;
+}
+.ant-layout-sider-collapsed {
+  min-width: 80px !important;
+  max-width: 80px !important;
+}

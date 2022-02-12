@@ -1,3 +1,9 @@
+.navbar-container {
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+  }
+
 .burger-container {
     display: flex;
     justify-content: start;
