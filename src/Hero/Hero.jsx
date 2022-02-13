@@ -1,4 +1,4 @@
-import { Typography, Layout, Row, Col } from "antd";
+import { Typography, Row, Col, Button } from "antd";
 import "./Hero.css"
 
 export default function About () {
@@ -14,6 +14,11 @@ export default function About () {
                         Software Developer
                     </Title>
                 </Title>
+                <button
+                className="hero-btn"
+                >
+                    Learn More
+                </button>
             </Col>
         </Row>
     )
