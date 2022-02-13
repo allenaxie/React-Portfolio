@@ -2,13 +2,27 @@
     color:white !important;
     font-family: Orbitron;
     font-size: 4rem !important;
+    text-shadow: 3px 3px 6px #d8d290;
+    margin-bottom: 0px !important;
 }
 
 .about-subtitle {
     color:white !important;
     font-family: Orbitron;
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
+    margin-top: 0.5em !important;
+    text-shadow: 3px 3px 6px #d8d290;
+
+    /* animation: shine 3s infinite forwards ease-in-out;
+    background: linear-gradient(to right, rgb(19,19,19) 0, rgb(223, 215, 172) 10%, rgb(19,19,19)  20%);
+    background-position: 0; */
 }
+/* Shine animation */
+/* @keyframes shine {
+    100%
+      {background-position: 500px}
+} */
+
 
 .hero-btn {
     border-radius: 50%;
@@ -31,12 +45,14 @@
 
 .hero-quote {
     color:white !important;
-    font-size:1.6rem !important;
+    font-size:1.3rem !important;
     margin-top: 1rem;
-    margin-left: 5rem;
+    margin-left: 10rem;
+    font-family: Abel;
 }
 .while, .if, .break {
     color:rgb(235, 211, 116);
+    
 }
 .try, .if {
     margin-left:1rem;
@@ -44,3 +60,5 @@
 .break {
     margin-left:2rem;
 }
+
+
