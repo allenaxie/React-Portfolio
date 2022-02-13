@@ -24,6 +24,9 @@ export default function About () {
                                 Learn More
                             </button>
                         </Col>
+                        <Col >
+                            <span className="coding-emoji">👨‍💻</span>
+                        </Col>
                         <Col>
                             <Title className="hero-quote">
                                 <span className="while">while</span> <span>(noSuccess)</span>
@@ -41,10 +44,6 @@ export default function About () {
                                         </span>
                             </Title> 
                         </Col>
-                        <Col >
-                            <span className="coding-emoji">👨‍💻</span>
-                        </Col>
-                        
                     </Space>
                 </Row>
             </Col>
