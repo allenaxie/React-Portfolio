@@ -1,5 +1,5 @@
 import { Typography, Layout, Row, Col } from "antd";
-import "./About.css"
+import "./Hero.css"
 
 export default function About () {
 

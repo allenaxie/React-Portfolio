@@ -1,9 +1,10 @@
-
-
 .navbar-container {
-    position: sticky;
-    /* height: 100vh; */
-  }
+    position: fixed;
+    height: 100%;
+    width:min-content;
+    background-color: rgb(23,23,23) !important;
+
+}
 
 .burger-container {
     display: flex;
