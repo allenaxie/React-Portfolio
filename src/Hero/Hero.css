@@ -1,6 +1,13 @@
 .about-title {
     color:white !important;
     font-family: Orbitron;
+    font-size: 4rem !important;
+}
+
+.about-subtitle {
+    color:white !important;
+    font-family: Orbitron;
+    font-size: 3rem !important;
 }
 
 .hero-btn {

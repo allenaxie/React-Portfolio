@@ -10,7 +10,7 @@ export default function About () {
             <Col className="about-main-col">
                 <Title className="about-title">
                     Hi, I'm Allen! 
-                    <Title className="about-title" level={2}>
+                    <Title className="about-subtitle" level={2}>
                         Software Developer
                     </Title>
                 </Title>
