@@ -10,7 +10,10 @@
     height: 5rem;
     background-color: rgb(19,19,19);
     color: rgb(180,169,132);
-    box-shadow: 0 6px 6px -4px rgb(230, 219, 173);
+    box-shadow: 0 6px 6px -4px rgb(230, 219, 173) !important;
+}
+.hero-btn:focus {
+    outline: none !important;
 }
 .hero-btn:hover {
     background-color: rgb(237, 237, 237);

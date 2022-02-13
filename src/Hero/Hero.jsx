@@ -15,7 +15,7 @@ export default function About () {
                     </Title>
                 </Title>
                 <button
-                className="hero-btn"
+                className="hero-btn btn"
                 >
                     Learn More
                 </button>
