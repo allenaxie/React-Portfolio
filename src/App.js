@@ -1,9 +1,10 @@
 import 'antd/dist/antd.css'
 import './App.css';
-import { Typography, Layout, Row, Col, Image } from "antd";
+import { Typography, Layout, Row, Col, Image, Divider } from "antd";
 import NavigationBar from "./NavigationBar/NavigationBar";
-import Hero from "./Hero/Hero";
 import { useState } from "react";
+import Hero from "./Hero/Hero";
+import About from "./About/About";
 
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
       className="body"
       hasSider
       >
+        {/* Navbar */}
         <Sider 
         className="sider"
         trigger={null}
@@ -26,9 +28,11 @@ export default function App() {
         >
           <NavigationBar isNavCollapsed={isNavCollapsed} setIsNavCollapsed={setIsNavCollapsed}/>
         </Sider>
+        {/* Main Content */}
         <Layout className="main-container">
           <Content className="main">
-            <Row className="hero-container">
+            {/* Hero Section */}
+            <Row className="hero-section">
               <Col 
               md={{span:14, offset:1}}
               >
@@ -42,12 +46,14 @@ export default function App() {
                 />
               </Col>
             </Row>
-            <Row>
-              <Col>
+            {/* About Me */}
+            <Row className="about-section">
+              <Col className="about-container">
+                <About/>
               </Col>
             </Row>
           </Content>
-          <Footer></Footer>
+          <Footer className="footer-container"></Footer>
 
         </Layout>
       </Layout>

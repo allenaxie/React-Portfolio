@@ -19,6 +19,19 @@ export default function About () {
                 >
                     Learn More
                 </button>
+                <Title className="hero-quote">
+                    <span className="while">while</span> <span>(noSuccess)</span>
+                        <br/>
+                        {"{"}
+                        <br/>
+                        <span className="try">tryAgain();</span>
+                        <br/>
+                        <span className="if">if</span> <span className="dead">(dead)</span>
+                            <br/>
+                            <span className="break">break;</span>
+                            <br/>
+                            {"}"}
+                </Title>
             </Col>
         </Row>
     )
