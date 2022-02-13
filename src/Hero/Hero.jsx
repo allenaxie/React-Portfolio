@@ -36,9 +36,15 @@ export default function About () {
                                         <br/>
                                         <span className="break">break;</span>
                                         <br/>
-                                        {"}"}
-                            </Title>
+                                        <span className="quote-end">
+                                            {"}"}
+                                        </span>
+                            </Title> 
                         </Col>
+                        <Col >
+                            <span className="coding-emoji">👨‍💻</span>
+                        </Col>
+                        
                     </Space>
                 </Row>
             </Col>

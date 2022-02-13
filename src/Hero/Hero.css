@@ -45,14 +45,14 @@
 
 .hero-quote {
     color:white !important;
-    font-size:1.3rem !important;
+    font-size:1.1rem !important;
     margin-top: 1rem;
     margin-left: 10rem;
     font-family: Abel;
+    width:50%;
 }
 .while, .if, .break {
     color:rgb(235, 211, 116);
-    
 }
 .try, .if {
     margin-left:1rem;
@@ -60,5 +60,20 @@
 .break {
     margin-left:2rem;
 }
+.quote-end {
+    animation: 
+        blink-caret 1s step-end infinite;
+    border-right: .1em solid rgb(255, 255, 255); /* The typwriter cursor */
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255) }
+}
 
+.coding-emoji {
+    font-size:5rem !important;
+}
 
+ 
