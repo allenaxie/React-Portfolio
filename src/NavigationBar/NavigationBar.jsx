@@ -33,9 +33,6 @@ export default function NavigationBar({ isNavCollapsed, setIsNavCollapsed }) {
             <Menu.Item className="menu-items" key="2" icon={ <FolderOpenOutlined /> }>
                 Projects
             </Menu.Item>
-            <Menu.Item className="menu-items" key="3" icon={ <BranchesOutlined /> }>
-                Skills
-            </Menu.Item>
             <Menu.Item className="menu-items" key="4" icon={<MailOutlined />}>
                 Contact
             </Menu.Item>
