@@ -2,6 +2,7 @@ import React from 'react';
 import "./NavigationBar.css"
 import { IdcardOutlined, FolderOpenOutlined, MailOutlined, BranchesOutlined } from "@ant-design/icons";
 import { Menu, Button } from "antd";
+import { Link } from 'react-router-dom';
 
 export default function NavigationBar({ isNavCollapsed, setIsNavCollapsed }) {
 
@@ -28,15 +29,25 @@ export default function NavigationBar({ isNavCollapsed, setIsNavCollapsed }) {
                 </a>
             </div>
             <Menu.Item className="menu-items" key="1" icon={<IdcardOutlined />}>
-                About
+                    <a href="#home">
+                        Allen X             
+                    </a>
             </Menu.Item>
-            <Menu.Item className="menu-items" key="2" icon={ <FolderOpenOutlined /> }>
-                Projects
+            <Menu.Item className="menu-items" key="2" icon={<IdcardOutlined />}>
+                    <a href="#about">
+                        About                
+                    </a>
+            </Menu.Item>
+            <Menu.Item className="menu-items" key="3" icon={ <FolderOpenOutlined /> }>
+                <a href="#projects">
+                    Projects
+                </a>
             </Menu.Item>
             <Menu.Item className="menu-items" key="4" icon={<MailOutlined />}>
-                Contact
+                <a href="#contact">
+                    Contact
+                </a>
             </Menu.Item>
-
         </Menu>
     )
 }

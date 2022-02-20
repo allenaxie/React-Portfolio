@@ -7,6 +7,8 @@ import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
+import { Routes, Route } from "react-router-dom";
+
 
 
 export default function App() {
@@ -31,7 +33,7 @@ export default function App() {
           <NavigationBar isNavCollapsed={isNavCollapsed} setIsNavCollapsed={setIsNavCollapsed}/>
         </Sider>
         {/* Main Content */}
-        <Layout className="main-container">
+        <Layout className="main-container" id="home">
           <Content className="main">
             {/* Hero Section */}
             <Row className="hero-section">
@@ -50,26 +52,25 @@ export default function App() {
               </Col>
             </Row>
             {/* About Me */}
-            <Row className="about-section">
+            <Row className="about-section" id="about">
               <Col className="about-container">
-                <About/>
+                <About  />
               </Col>
             </Row>
             {/* Projects */}
-            <Row className="projects-section">
+            <Row className="projects-section" id="projects">
               <Col className="projects-container">
                 <Projects/>
               </Col>
             </Row>
             {/* Contact */}
-            <Row className="contact-section">
+            <Row className="contact-section" id="contact">
               <Col className="contact-container">
                 <Contact/>
               </Col>
             </Row>
           </Content>
           <Footer className="footer-container"></Footer>
-
         </Layout>
       </Layout>
 
