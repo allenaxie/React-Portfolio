@@ -1,0 +1,25 @@
+.contact-divider {
+    color: white !important;
+    font-size: 4rem !important;
+    text-shadow: 3px 3px 6px #d8d290 !important;
+    display:block;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ant-form-item-label label {
+    color:white !important;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 18rem;
+}
+
+.ant-form-item {
+    display: flex;
+    justify-content: center !important;
+}

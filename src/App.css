@@ -41,7 +41,7 @@
 /* About */
 .about-section {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .about-container {
@@ -52,10 +52,21 @@
 /* Projects */
 .projects-section {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .projects-container {
+  width: 100%;
+  text-align: center !important;
+}
+
+/* Contact */
+.contact-section {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.contact-container {
   width: 100%;
   text-align: center !important;
 }

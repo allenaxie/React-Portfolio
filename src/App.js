@@ -6,6 +6,7 @@ import { useState } from "react";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
+import Contact from "./Contact/Contact";
 
 
 export default function App() {
@@ -58,6 +59,12 @@ export default function App() {
             <Row className="projects-section">
               <Col className="projects-container">
                 <Projects/>
+              </Col>
+            </Row>
+            {/* Contact */}
+            <Row className="contact-section">
+              <Col className="contact-container">
+                <Contact/>
               </Col>
             </Row>
           </Content>
