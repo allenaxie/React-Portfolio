@@ -5,6 +5,7 @@ import NavigationBar from "./NavigationBar/NavigationBar";
 import { useState } from "react";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
+import Projects from "./Projects/Projects";
 
 
 export default function App() {
@@ -51,6 +52,12 @@ export default function App() {
             <Row className="about-section">
               <Col className="about-container">
                 <About/>
+              </Col>
+            </Row>
+            {/* Projects */}
+            <Row className="projects-section">
+              <Col className="projects-container">
+                <Projects/>
               </Col>
             </Row>
           </Content>

@@ -9,6 +9,7 @@ export default function About() {
     const { Title } = Typography;
     const { Meta } = Card;
 
+    // Tabs
     const tabList = [
         {
             key: "Description",
@@ -23,7 +24,7 @@ export default function About() {
             tab: "Hobbies",
         }
     ]
-
+    // Tab content
     const contentList = {
         Description:
             <p>I am a full-stack developer with a passion in building innovative products to solve complex problems. With my experiences as a personal trainer and as a coordinator, I’ve developed strong communication and leadership skills, along with a relentless work ethic. I've always been passionate about finding creative solutions to navigate through a problem, which inspired me to pursue software engineering. I am excited to utilize my previous experiences and my passion for problem-solving to foster my growth as a software developer.</p>,
