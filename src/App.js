@@ -43,6 +43,7 @@ export default function App() {
               >
                 <Image
                 src="https://i.imgur.com/5m65Hej.jpeg"
+                className="profile-pic"
                 />
               </Col>
             </Row>
