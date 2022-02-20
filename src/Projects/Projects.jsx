@@ -13,6 +13,7 @@ export default function Projects () {
             <Row 
             className="projects"
             >
+                {/* Column 1 */}
                 <Col
                 xs={{span:22, offset:1}}
                 lg={{span:6}}
@@ -25,13 +26,28 @@ export default function Projects () {
                     }}
                     className="cryptohub-project"
                     >
-                        <div className="crypto-overlay">
+                        <div className="cryptohub-overlay">
                             <h3 className="overlay-title">CryptoHub</h3>
                             <Button href="https://ax-cryptohub.netlify.app/" target="_blank" rel="noreferrer"><p>Project</p></Button>
                             <Button href="https://github.com/allenaxie/Cryptohub" target="_blank" rel="noreferrer"><p>Github</p></Button>
                         </div>
                     </div>
+                    {/* Travel Booklet */}
+                    <div
+                    style={{
+                        width:300,
+                        height:150,
+                    }}
+                    className="travelBooklet-project"
+                    >
+                        <div className="travelBooklet-overlay">
+                            <h3 className="overlay-title">Travel Booklet</h3>
+                            <Button href="https://travelbooklet.herokuapp.com/" target="_blank" rel="noreferrer"><p>Project</p></Button>
+                            <Button href="https://github.com/allenaxie/travel-booklet" target="_blank" rel="noreferrer"><p>Github</p></Button>
+                        </div>
+                    </div>
                 </Col>
+                {/* Column 2 */}
                 <Col
                 xs={{span:22, offset:1}}
                 lg={{span:6}}
@@ -51,6 +67,7 @@ export default function Projects () {
                         </div>
                     </div>
                 </Col>
+                {/* Column 3 */}
                 <Col
                 xs={{span:22, offset:1}}
                 lg={{span:6}}

@@ -20,10 +20,10 @@
     background-size: cover;
     background-position: center;
 }
-.cryptohub-project:hover .crypto-overlay {
+.cryptohub-project:hover .cryptohub-overlay {
     opacity: 1;
 }
-.crypto-overlay {
+.cryptohub-overlay {
     width: 100%;
     height: 100%;
     background: linear-gradient(
@@ -43,8 +43,8 @@
     padding-top: 1rem !important;
     font-size: 1.4rem;
 }
-.crypto-overlay .ant-btn {
-    margin-top: 1rem !important;
+.cryptohub-overlay .ant-btn {
+    margin: 1rem !important;
 }
 
 /* Before I Fly */
@@ -79,7 +79,7 @@
     font-size: 1.4rem;
 }
 .beforeIFly-overlay .ant-btn {
-    margin-top: 1rem !important;
+    margin: 1rem !important;
 }
 /* Investmint */
 .investmint-project {
@@ -113,7 +113,43 @@
     font-size: 1.4rem;
 }
 .investmint-overlay .ant-btn {
-    margin-top: 1rem !important;
+    margin: 1rem !important;
+}
+/* Travel Booklet */
+.travelBooklet-project {
+    pointer-events: auto;
+    cursor: pointer;
+    background: url("https://i.imgur.com/W1Anuor.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+.travelBooklet-project:hover .travelBooklet-overlay {
+    opacity: 1;
+}
+.travelBooklet-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("https://i.imgur.com/W1Anuor.png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: ease-in-out .5s;
+    border-radius: 6px;
+}
+.overlay-title {
+    color:white;
+    padding-top: 1rem !important;
+    font-size: 1.4rem;
+}
+.travelBooklet-overlay .ant-btn {
+    margin: 1rem !important;
 }
 
 
