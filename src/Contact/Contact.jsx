@@ -1,19 +1,33 @@
 import "./Contact.css"
-import { Typography, Divider, Card, Avatar, Row, Col, Tag, Button, Form, Input } from "antd";
+import { Typography, Divider, Card, Avatar, Row, Col, Tag, Button, Form, Input, notification } from "antd";
 import { GithubOutlined, LinkedinOutlined } from '@ant-design/icons';
+import { useForm, ValidationError } from '@formspree/react';
+import { useState, useEffect } from 'react';
 
 
 export default function Contact () {
     const { Title } = Typography;
     const { Meta } = Card;
 
-    function handleFinish (values) {
-        console.log('success',values)
-        // FormInstance.resetFields();
+    // handle form 
+    const [state, handleFinish] =useForm("xoqrdpkb")
+    if (state.succeeded) {
+        openNotification();
     }
-
+   
     function handleFinishFailed (errorInfo) {
         console.log('failed', errorInfo);
+    }
+
+    function handleReset() {
+        this.form.resetFields();
+    }
+
+    function openNotification () {
+        return notification.open({
+            message:'Form Submitted Successfully!',
+            description:"Thank you for reaching out to me. I will reply to you as soon as I can!"
+        })
     }
 
     return (
@@ -26,8 +40,7 @@ export default function Contact () {
             initialValues={{remember:true}}
             onFinish={handleFinish}
             onFinishFailed={handleFinishFailed}
-            autocomplete="off"
-            // requiredMark={false}
+            autoComplete="off"
             >
                 <Form.Item
                 label="Name"
@@ -70,7 +83,7 @@ export default function Contact () {
                     />
                 </Form.Item>
                 <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                    <Button type="submit" htmlType="submit">
+                    <Button type="submit" htmlType="submit" onClick={handleReset}>
                         Submit
                     </Button>
                 </Form.Item>
