@@ -151,6 +151,42 @@
 .travelBooklet-overlay .ant-btn {
     margin: 1rem !important;
 }
+/* HeroDex */
+.herodex-project {
+    pointer-events: auto;
+    cursor: pointer;
+    background: url("https://i.imgur.com/EhNzU3A.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+.herodex-project:hover .herodex-overlay {
+    opacity: 1;
+}
+.herodex-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("https://i.imgur.com/EhNzU3A.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: ease-in-out .5s;
+    border-radius: 6px;
+}
+.overlay-title {
+    color:white;
+    padding-top: 1rem !important;
+    font-size: 1.4rem;
+}
+.herodex-overlay .ant-btn {
+    margin: 1rem !important;
+}
 
 
 

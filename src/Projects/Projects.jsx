@@ -66,6 +66,20 @@ export default function Projects () {
                             <Button href="https://github.com/allenaxie/beforeifly" target="_blank" rel="noreferrer"><p>Github</p></Button>
                         </div>
                     </div>
+                    {/* HeroDex */}
+                    <div
+                    style={{
+                        width:290,
+                        height:150,
+                    }}
+                    className="herodex-project"
+                    >
+                        <div className="herodex-overlay">
+                            <h3 className="overlay-title">HeroDex</h3>
+                            <Button href="https://herodex.herokuapp.com/" target="_blank" rel="noreferrer"><p>Project</p></Button>
+                            <Button href="https://github.com/allenaxie/herodex" target="_blank" rel="noreferrer"><p>Github</p></Button>
+                        </div>
+                    </div>
                 </Col>
                 {/* Column 3 */}
                 <Col
