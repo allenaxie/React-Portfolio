@@ -8,19 +8,18 @@ import { useState, useEffect } from 'react';
 export default function Contact () {
     const { Title } = Typography;
     const { Meta } = Card;
+    const [form] = Form.useForm();
+
 
     // handle form 
     const [state, handleFinish] =useForm("xoqrdpkb")
     if (state.succeeded) {
         openNotification();
+        form.resetFields();
     }
    
     function handleFinishFailed (errorInfo) {
         console.log('failed', errorInfo);
-    }
-
-    function handleReset() {
-        this.form.resetFields();
     }
 
     function openNotification () {
@@ -35,6 +34,7 @@ export default function Contact () {
             <Title className="contact-divider"> Contact Me</Title>
             <Form
             name="contact-form"
+            form={form}
             labelCol={{span:8}}
             wrapperCol={{span:16}}
             initialValues={{remember:true}}
@@ -83,7 +83,7 @@ export default function Contact () {
                     />
                 </Form.Item>
                 <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                    <Button type="submit" htmlType="submit" onClick={handleReset}>
+                    <Button type="submit" htmlType="submit">
                         Submit
                     </Button>
                 </Form.Item>
