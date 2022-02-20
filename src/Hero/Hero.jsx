@@ -14,7 +14,7 @@ export default function About () {
                     <Title className="about-subtitle" level={2}>
                         Software Developer
                     </Title>
-                <Row>
+                <Row className="btnEmojiQuote-container">
                     <Space >
 
                         <Col>

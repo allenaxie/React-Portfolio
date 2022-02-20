@@ -25,6 +25,9 @@
 } */
 
 
+.btnEmojiQuote-container {
+    width: 100%;
+}
 .hero-btn {
     border-radius: 50%;
     border-color: rgb(180,169,132);
@@ -49,7 +52,7 @@
 }
 .hero-quote {
     color:white !important;
-    font-size:1.1rem !important;
+    font-size:.8rem !important;
     margin-top: 1rem;
     margin-left: 2rem;
     font-family: Abel;
