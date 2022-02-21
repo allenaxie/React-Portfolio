@@ -4,6 +4,11 @@
     text-shadow: 3px 3px 6px #d8d290 !important;
     display:block;
 }
+@media only screen and (max-width: 450px) {
+    .project-divider {
+        font-size: 3.2rem !important;
+    }
+}
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -24,7 +29,7 @@
     background: url("https://i.imgur.com/6KwmtbE.png");
     background-size: cover;
     background-position: center;
-    margin-top: 3rem;
+    margin-top: 3rem !important;
 
 }
 .cryptohub-project:hover .cryptohub-overlay {
@@ -61,7 +66,7 @@
     background: url("https://i.imgur.com/KfLxZzB.png");
     background-size: cover;
     background-position: center;
-    margin-top: 3rem;
+    margin-top: 3rem !important;
 }
 .beforeIFly-project:hover .beforeIFly-overlay {
     opacity: 1;
@@ -96,7 +101,7 @@
     background: url("https://i.imgur.com/0Ws3DKl.png");
     background-size: cover;
     background-position: center;
-    margin-top: 3rem;
+    margin-top: 3rem !important;
 
 }
 .investmint-project:hover .investmint-overlay {
@@ -132,7 +137,7 @@
     background: url("https://i.imgur.com/W1Anuor.png");
     background-size: cover;
     background-position: center;
-    margin-top: 3rem;
+    margin-top: 3rem !important;
 }
 .travelBooklet-project:hover .travelBooklet-overlay {
     opacity: 1;
@@ -167,7 +172,7 @@
     background: url("https://i.imgur.com/EhNzU3A.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: 3rem;
+    margin-top: 3rem !important;
 }
 .herodex-project:hover .herodex-overlay {
     opacity: 1;

@@ -4,6 +4,11 @@
     text-shadow: 3px 3px 6px #d8d290 !important;
     display:block;
 }
+@media only screen and (max-width: 450px) {
+    .contact-divider {
+        font-size: 3.2rem !important;
+    }
+}
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -24,8 +29,3 @@
     justify-content: center !important;
 }
 
-@media only screen and (max-width: 1700px) {
-    #contact-form {
-        /* margin: 0 auto; */
-    }
-}

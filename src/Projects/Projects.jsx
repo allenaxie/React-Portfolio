@@ -18,13 +18,15 @@ export default function Projects () {
                     {/* 3 in full screen, 1 mobile */}
                     <Col
                     xs={{span:24}}
+                    sm={{span:10}}
                     lg={{span:7}}
                     >
                         {/* Cryptohub */}
                     <div
                     style={{
                         width:150,
-                        height:300
+                        height:300,
+                        margin:"0 auto"
                     }}
                     className="cryptohub-project"
                     >
@@ -37,13 +39,17 @@ export default function Projects () {
                     </Col>
                     <Col
                     xs={{span:24}}
+                    sm={{span:10}}
+
                     lg={{span:7}}
                     >
                         {/* Before I Fly */}
                     <div
                     style={{
                         width:150,
-                        height:300
+                        height:300,
+                        margin:"0 auto",
+
                     }}
                     className="beforeIFly-project"
                     >
@@ -56,13 +62,16 @@ export default function Projects () {
                     </Col>
                     <Col
                     xs={{span:24}}
+                    sm={{span:10}}
                     lg={{span:7}}
                     >
                         {/* InvestMint */}
                     <div
                     style={{
                         width:150,
-                        height:300
+                        height:300,
+                        margin:"0 auto",
+
                     }}
                     className="investmint-project"
                     >
@@ -79,6 +88,7 @@ export default function Projects () {
                     {/* 2 in full screen, 1 mobile */}
                     <Col
                     xs={{span:24}}
+                    sm={{span:17}}
                     lg={{span:11}}
                     >
                          {/* Travel Booklet */}
@@ -86,6 +96,8 @@ export default function Projects () {
                     style={{
                         width:300,
                         height:150,
+                        margin:"0 auto",
+
                     }}
                     className="travelBooklet-project"
                     >
@@ -99,6 +111,7 @@ export default function Projects () {
 
                     <Col
                     xs={{span:24}}
+                    sm={{span:17}}
                     lg={{span:11}}
                     >
                         {/* HeroDex */}
@@ -106,6 +119,8 @@ export default function Projects () {
                     style={{
                         width:290,
                         height:150,
+                        margin:"0 auto",
+
                     }}
                     className="herodex-project"
                     >

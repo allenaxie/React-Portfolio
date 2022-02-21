@@ -3,7 +3,11 @@
     font-size: 4rem !important;
     text-shadow: 3px 3px 6px #d8d290 !important;
 }
-
+@media only screen and (max-width: 450px) {
+    .about-divider {
+        font-size: 3.2rem !important;
+    }
+}
 .about-card {
     box-shadow: 3px 3px 6px #eaedb2;
 }
