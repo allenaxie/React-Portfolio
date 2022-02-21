@@ -1,5 +1,5 @@
 import "./Contact.css"
-import { Typography, Divider, Card, Avatar, Row, Col, Tag, Button, Form, Input, notification } from "antd";
+import { Typography, Divider, Card, Avatar, Row, Col, Tag, Button, Form, Input, notification, message } from "antd";
 import { GithubOutlined, LinkedinOutlined } from '@ant-design/icons';
 import { useForm, ValidationError } from '@formspree/react';
 import { useState, useEffect } from 'react';
@@ -12,9 +12,15 @@ export default function Contact () {
 
 
     // handle form 
-    const [state, handleFinish] =useForm("xoqrdpkb")
+    const [state, handleFinish] = useForm("xoqrdpkb")
     if (state.succeeded) {
-        openNotification();
+        // openNotification();
+        console.log('form submit success!')
+        // message
+        // function info () {
+        //     message.info('Form Submitted Successfully! Thank you for reaching out to me. I will reply to you as soon as I can!')
+        // }
+        // info();
         form.resetFields();
     }
    
