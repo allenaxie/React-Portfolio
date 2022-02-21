@@ -1,9 +1,11 @@
 import { Typography, Row, Col, Button, Space } from "antd";
+import { useNavigate } from "react-router-dom";
 import "./Hero.css"
 
 export default function About () {
 
     const { Title } = Typography
+    const navigate = useNavigate();
 
     return (
         <Row className="about-main">
@@ -26,11 +28,14 @@ export default function About () {
                     <Space >
 
                         <Col>
+                        <form action="#about">
                             <button
+                            type="submit"
                             className="hero-btn btn"
                             >
                                 Learn More
                             </button>
+                        </form>
                         </Col>
                         <Col >
                             <span className="coding-emoji">👨‍💻</span>
