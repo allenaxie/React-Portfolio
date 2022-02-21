@@ -71,7 +71,9 @@ export default function About() {
             >
                 <Card
                     className="about-card"
-                    title={<><Avatar src="https://i.imgur.com/LUR7gwH.jpg" />&nbsp;&nbsp;Full stack software developer</>}
+                    title={<>
+                    {/* <Avatar src="https://i.imgur.com/LUR7gwH.jpg" /> */}
+                    &nbsp;&nbsp;Full stack software developer</>}
                     actions={[
                         <a className="about-github-container action-btns" href="https://github.com/allenaxie" target="_blank">
                             <GithubOutlined key="Github" />
@@ -85,6 +87,12 @@ export default function About() {
                     tabList={tabList}
                     onTabChange={(key) => handleTabChange(key)}
                     activeTabKey={activeTab}
+                    extra ={
+                    <Avatar 
+                    src="https://i.imgur.com/LUR7gwH.jpg"
+                    size={54} 
+                    />
+                    }
                 >
                     {contentList[activeTab]}
 

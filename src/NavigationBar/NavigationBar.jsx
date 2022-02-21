@@ -1,6 +1,6 @@
 import React from 'react';
 import "./NavigationBar.css"
-import { IdcardOutlined, FolderOpenOutlined, MailOutlined, BranchesOutlined } from "@ant-design/icons";
+import { IdcardOutlined, FolderOpenOutlined, MailOutlined, BranchesOutlined, UserOutlined } from "@ant-design/icons";
 import { Menu, Button } from "antd";
 import { Link } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ export default function NavigationBar({ isNavCollapsed, setIsNavCollapsed }) {
                     <div className="line3"></div>
                 </a>
             </div>
-            <Menu.Item className="menu-items" key="1" icon={<IdcardOutlined />}>
+            <Menu.Item className="menu-items" key="1" icon={<UserOutlined />}>
                     <a href="#home">
                         Allen X             
                     </a>
