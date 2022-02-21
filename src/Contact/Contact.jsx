@@ -32,62 +32,70 @@ export default function Contact () {
     return (
         <>
             <Title className="contact-divider"> Contact Me</Title>
-            <Form
-            name="contact-form"
-            form={form}
-            labelCol={{span:8}}
-            wrapperCol={{span:16}}
-            initialValues={{remember:true}}
-            onFinish={handleFinish}
-            onFinishFailed={handleFinishFailed}
-            autoComplete="off"
+            <Col
+            xs={{span:24, offset:2}}
+            sm={{span:24, offset:1}}
+            lg={{span:16, offset:2}}
             >
-                <Form.Item
-                label="Name"
-                name="name"
-                rules={[
-                    {required:true, message:"Please let me know your name 😢" }]}
+            
+                <Form
+                name="contact-form"
+                form={form}
+                labelCol={{span:5}}
+                wrapperCol={{span:16}}
+                initialValues={{remember:true}}
+                onFinish={handleFinish}
+                onFinishFailed={handleFinishFailed}
+                autoComplete="off"
                 >
-                    <Input
-                    placeholder="Kindly enter your name here."
-                    />
-                </Form.Item>
-                <Form.Item
-                label="Company"
-                name="company"
-                >
-                    <Input
-                    placeholder="Company name?"
-                    />
-                </Form.Item>
-                <Form.Item
-                label="Email"
-                name="email"
-                required
-                rules={[
-                    {required:true, message:"Don't forget to enter your email ✉️!" }]}
-                >
-                    <Input
-                    placeholder="Please enter your email here."
-                    />
-                </Form.Item>
-                <Form.Item
-                label="Message"
-                name="message"
-                required
-                rules={[
-                    {required:true, message:"Don't forget your message 😄" }]}
-                >
-                    <Input.TextArea
-                    placeholder="Please enter your message here."
-                    />
-                </Form.Item>
-                <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                    <Button type="submit" htmlType="submit">
-                        Submit
-                    </Button>
-                </Form.Item>
-            </Form>
+                    <Form.Item
+                    label="Name"
+                    name="name"
+                    rules={[
+                        {required:true, message:"Please let me know your name 😢" }]}
+                    >
+                        <Input
+                        placeholder="Kindly enter your name here."
+                        />
+                    </Form.Item>
+                    <Form.Item
+                    label="Company"
+                    name="company"
+                    >
+                        <Input
+                        placeholder="Company name?"
+                        />
+                    </Form.Item>
+                    <Form.Item
+                    label="Email"
+                    name="email"
+                    required
+                    rules={[
+                        {required:true, message:"Don't forget to enter your email ✉️!" }]}
+                    >
+                        <Input
+                        placeholder="Please enter your email here."
+                        />
+                    </Form.Item>
+                    <Form.Item
+                    label="Message"
+                    name="message"
+                    required
+                    rules={[
+                        {required:true, message:"Don't forget your message 😄" }]}
+                    >
+                        <Input.TextArea
+                        placeholder="Please enter your message here."
+                        />
+                    </Form.Item>
+                    <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+                        <Button type="submit" htmlType="submit">
+                            Submit
+                        </Button>
+                    </Form.Item>
+                </Form>
+            </Col>
+            
         </>
     )
 }

@@ -16,10 +16,16 @@
 #contact-form {
     display: flex;
     flex-direction: column;
-    margin-right: 18rem;
+    /* margin-right: 18rem; */
 }
 
 .ant-form-item {
     display: flex;
     justify-content: center !important;
+}
+
+@media only screen and (max-width: 1700px) {
+    #contact-form {
+        /* margin: 0 auto; */
+    }
 }
