@@ -38,12 +38,14 @@ export default function App() {
             {/* Hero Section */}
             <Row className="hero-section">
               <Col 
-              md={{span:14, offset:1}}
+              md={{span:14, offset:5}}
+              lg={{span:14, offset:1}}
               >
                 <Hero/>
               </Col>
               <Col
-              md={{span:8, offset:1}}
+              md={{span:14, offset:5}}
+              lg={{span:8, offset:1}}
               >
                 <Image
                 src="https://i.imgur.com/5m65Hej.jpeg"

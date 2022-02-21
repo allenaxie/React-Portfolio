@@ -8,12 +8,20 @@ export default function About () {
     return (
         <Row className="about-main">
             <Col className="about-main-col">
-                <Title className="about-title">
-                    Hi, I'm Allen! 
-                </Title>
-                    <Title className="about-subtitle" level={2}>
-                        Software Developer
-                    </Title>
+                <Row>
+                    <Col
+                    md={{span:24}}
+                    >
+                        <Title className="about-title">
+                            Hi, I'm Allen! 
+                        </Title>
+                    </Col>
+                    <Col>
+                        <Title className="about-subtitle" level={2}>
+                            Software Developer
+                        </Title>
+                    </Col>
+                </Row>
                 <Row className="btnEmojiQuote-container">
                     <Space >
 

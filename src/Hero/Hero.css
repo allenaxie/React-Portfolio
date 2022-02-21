@@ -4,8 +4,37 @@
     font-size: 4rem !important;
     text-shadow: 3px 3px 6px #d8d290;
     margin-bottom: 0px !important;
+    /* text-align: center; */
 }
-
+@media only screen and (min-width:320px) {
+    .about-title {
+        font-size: 2.2rem !important;
+    }
+    .about-subtitle {
+        font-size: 1.5rem !important;
+    }
+}
+@media only screen and (min-width:576px) {
+    .about-title {
+        font-size: 2.6rem !important;
+    }
+    .about-subtitle {
+        font-size: 2rem !important;
+    }
+}
+@media only screen and (min-width:768px) {
+    .about-title {
+        font-size: 3rem !important;
+    }
+    .about-subtitle {
+        font-size: 2.2rem !important;
+    }
+}
+@media only screen and (min-width:992px) {
+    .about-title {
+        font-size: 3.7rem !important;
+    }
+}
 .about-subtitle {
     color:white !important;
     font-family: Orbitron;
@@ -13,6 +42,7 @@
     margin-top: 0.5em !important;
     margin-bottom: 3.5rem !important;
     text-shadow: 3px 3px 6px #d8d290;
+    text-align: center;
 
     /* animation: shine 3s infinite forwards ease-in-out;
     background: linear-gradient(to right, rgb(19,19,19) 0, rgb(223, 215, 172) 10%, rgb(19,19,19)  20%);
