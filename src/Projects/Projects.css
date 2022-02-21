@@ -10,7 +10,12 @@
 }
 .projects {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+.projects-row {
+    display: flex;
+    justify-content: center;
 }
 /* Cryptohub */
 .cryptohub-project {
@@ -19,6 +24,8 @@
     background: url("https://i.imgur.com/6KwmtbE.png");
     background-size: cover;
     background-position: center;
+    margin-top: 3rem;
+
 }
 .cryptohub-project:hover .cryptohub-overlay {
     opacity: 1;
@@ -54,6 +61,7 @@
     background: url("https://i.imgur.com/KfLxZzB.png");
     background-size: cover;
     background-position: center;
+    margin-top: 3rem;
 }
 .beforeIFly-project:hover .beforeIFly-overlay {
     opacity: 1;
@@ -88,6 +96,8 @@
     background: url("https://i.imgur.com/0Ws3DKl.png");
     background-size: cover;
     background-position: center;
+    margin-top: 3rem;
+
 }
 .investmint-project:hover .investmint-overlay {
     opacity: 1;
@@ -122,8 +132,7 @@
     background: url("https://i.imgur.com/W1Anuor.png");
     background-size: cover;
     background-position: center;
-    margin-top: 5rem;
-    margin-left: 6rem;
+    margin-top: 3rem;
 }
 .travelBooklet-project:hover .travelBooklet-overlay {
     opacity: 1;
@@ -158,8 +167,7 @@
     background: url("https://i.imgur.com/EhNzU3A.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: 5rem;
-    margin-left: 6rem;
+    margin-top: 3rem;
 }
 .herodex-project:hover .herodex-overlay {
     opacity: 1;

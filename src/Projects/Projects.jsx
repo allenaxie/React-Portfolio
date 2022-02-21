@@ -12,13 +12,15 @@ export default function Projects () {
             <Title className="project-divider"> Projects</Title>     
             <Row 
             className="projects"
+            // gutter={[32,32]}
             >
-                {/* Column 1 */}
-                <Col
-                xs={{span:22, offset:1}}
-                lg={{span:6}}
-                >
-                    {/* Cryptohub */}
+                <Row className="projects-row">
+                    {/* 3 in full screen, 1 mobile */}
+                    <Col
+                    xs={{span:24}}
+                    lg={{span:7}}
+                    >
+                        {/* Cryptohub */}
                     <div
                     style={{
                         width:150,
@@ -32,27 +34,12 @@ export default function Projects () {
                             <Button href="https://github.com/allenaxie/Cryptohub" target="_blank" rel="noreferrer"><p>Github</p></Button>
                         </div>
                     </div>
-                    {/* Travel Booklet */}
-                    <div
-                    style={{
-                        width:300,
-                        height:150,
-                    }}
-                    className="travelBooklet-project"
+                    </Col>
+                    <Col
+                    xs={{span:24}}
+                    lg={{span:7}}
                     >
-                        <div className="travelBooklet-overlay">
-                            <h3 className="overlay-title">Travel Booklet</h3>
-                            <Button href="https://travelbooklet.herokuapp.com/" target="_blank" rel="noreferrer"><p>Project</p></Button>
-                            <Button href="https://github.com/allenaxie/travel-booklet" target="_blank" rel="noreferrer"><p>Github</p></Button>
-                        </div>
-                    </div>
-                </Col>
-                {/* Column 2 */}
-                <Col
-                xs={{span:22, offset:1}}
-                lg={{span:6}}
-                >
-                    {/* Before I Fly */}
+                        {/* Before I Fly */}
                     <div
                     style={{
                         width:150,
@@ -66,27 +53,12 @@ export default function Projects () {
                             <Button href="https://github.com/allenaxie/beforeifly" target="_blank" rel="noreferrer"><p>Github</p></Button>
                         </div>
                     </div>
-                    {/* HeroDex */}
-                    <div
-                    style={{
-                        width:290,
-                        height:150,
-                    }}
-                    className="herodex-project"
+                    </Col>
+                    <Col
+                    xs={{span:24}}
+                    lg={{span:7}}
                     >
-                        <div className="herodex-overlay">
-                            <h3 className="overlay-title">HeroDex</h3>
-                            <Button href="https://herodex.herokuapp.com/" target="_blank" rel="noreferrer"><p>Project</p></Button>
-                            <Button href="https://github.com/allenaxie/herodex" target="_blank" rel="noreferrer"><p>Github</p></Button>
-                        </div>
-                    </div>
-                </Col>
-                {/* Column 3 */}
-                <Col
-                xs={{span:22, offset:1}}
-                lg={{span:6}}
-                >
-                    {/* InvestMint */}
+                        {/* InvestMint */}
                     <div
                     style={{
                         width:150,
@@ -100,7 +72,51 @@ export default function Projects () {
                             <Button href="https://github.com/allenaxie/HackBMU-5.0-Team-SEI" target="_blank" rel="noreferrer"><p>Github</p></Button>
                         </div>
                     </div>
-                </Col>
+                    </Col>
+                </Row>
+
+                <Row className="projects-row">
+                    {/* 2 in full screen, 1 mobile */}
+                    <Col
+                    xs={{span:24}}
+                    lg={{span:11}}
+                    >
+                         {/* Travel Booklet */}
+                    <div
+                    style={{
+                        width:300,
+                        height:150,
+                    }}
+                    className="travelBooklet-project"
+                    >
+                        <div className="travelBooklet-overlay">
+                            <h3 className="overlay-title">Travel Booklet</h3>
+                            <Button href="https://travelbooklet.herokuapp.com/" target="_blank" rel="noreferrer"><p>Project</p></Button>
+                            <Button href="https://github.com/allenaxie/travel-booklet" target="_blank" rel="noreferrer"><p>Github</p></Button>
+                        </div>
+                    </div>
+                    </Col>
+
+                    <Col
+                    xs={{span:24}}
+                    lg={{span:11}}
+                    >
+                        {/* HeroDex */}
+                    <div
+                    style={{
+                        width:290,
+                        height:150,
+                    }}
+                    className="herodex-project"
+                    >
+                        <div className="herodex-overlay">
+                            <h3 className="overlay-title">HeroDex</h3>
+                            <Button href="https://herodex.herokuapp.com/" target="_blank" rel="noreferrer"><p>Project</p></Button>
+                            <Button href="https://github.com/allenaxie/herodex" target="_blank" rel="noreferrer"><p>Github</p></Button>
+                        </div>
+                    </div>
+                    </Col>
+                </Row>
             </Row>
         </>
     )
